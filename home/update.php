@@ -41,7 +41,7 @@ if(!isset($_SESSION['valid'])) {
 		}
 
 		h2{
-			text-align: center;
+			text-align: center; /* bonjour bonjour le centre */
 		}
 
 		input[type="text"], input[type="number"], input[type="date"], textarea {
