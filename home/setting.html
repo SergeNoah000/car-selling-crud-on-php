@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="this is template with css and html for more information in last languages" />
+    <link rel="stylesheet" href="../style/normalize.css" />
+    <link rel="stylesheet" href="../style/all.min.css" />
+    <link rel="stylesheet" href="../style/main.css" />
+    <title>Settings</title><style>
+        .{
+            color: rgba(37, 245, 210, 0.823);
+            background-size: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <form>
+            <fieldset>
+                <i class="fa fa-search"></i>
+                <input type="search" name="searchHead" placeholder="search keyword" />
+            </fieldset>
+        </form>
+        <div class="user-notification">
+            <i class="fa fa-bell"></i>
+            <div class="user-img">
+                <img src="../imges/avatar.png" alt="user-img" width="50" />
+            </div>
+        </div>
+    </header>
+    <nav class="navbar-left">
+        <div class="head-logo">Elzero</div>
+        <ul class="nav-element">
+            <li>
+                <i class="fab fa-dashcube"></i><a href="../index.html">Dashboard</a>
+            </li>
+            <li class="active">
+                <i class="fa fa-sticky-note"></i><a href="setting.html">settings</a>
+            </li>
+            <li>
+                <i class="fa fa-person-booth"></i><a href="profile.html">profile</a>
+            </li>
+            <li>
+                <i class="fa fa-project-diagram"></i><a href="projects.html">projects</a>
+            </li>
+            <li><i class="fa fa-capsules"></i><a href="courses.html">courses</a></li>
+            <li>
+                <i class="fa fa-person-booth"></i><a href="friends.html">friends</a>
+            </li>
+            <li><i class="fa fa-file-alt"></i><a href="files.html">files</a></li>
+            <li><i class="fa fa-plane"></i><a href="plans.html">plans</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div id="setting">
+            <div class="spacial-head">
+                <span>Setting</span>
+            </div>
+            <div class="container">
+                <div class="card site-control">
+                    <div class="head-site">
+                        <span class="title-card">Site Control</span>
+                        <span class="title-disc">Control The Website If There Is Maintenance</span>
+                    </div>
+                    <div class="section-site">
+                        <form>
+                            <div>
+                                <label for="siteCheck">
+                                    <span>Website Control</span>
+                                    <p>Open/Close Website And Type The Reason</p>
+                                </label>
+                                <div class="checkbox">
+                                    <input type="checkbox" name="checkSite" id="siteCheck" checked />
+                                    <i class="fas fa-times"></i>
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                            <textarea name="txtSite" id="siteTxt" cols="30" rows="5" placeholder="Close Message Content"
+                                title="this For Site Website"></textarea>
+                        </form>
+                    </div>
+                </div>
+                <div class="general-info card">
+                    <div class="head-info">
+                        <span class="title-card">General Info</span>
+                        <span class="title-disc">General Information About Your Account</span>
+                    </div>
+                    <form class="section-info">
+                        <label for="txtName">
+                            First Name
+                            <input type="text" name="txtName" id="txtName" placeholder="First Name" />
+                        </label>
+                        <label for="txtLastName">
+                            Last Name
+                            <input type="text" name="txtLN" id="txtLastName" placeholder="Last Name" />
+                        </label>
+                        <label for="txtEmail">
+                            Email
+                            <div>
+                                <input type="email" name="txtEmail" id="txtEmail" value="O@nn.sa" readonly="readonly"
+                                    disabled />
+                                <a href="#change" class="change">Change</a>
+                            </div>
+                        </label>
+                    </form>
+                </div>
+                <div class="card security-info">
+                    <div class="head-info">
+                        <span class="title-card">security Info</span>
+                        <span class="title-disc">security information About Your Account</span>
+                    </div>
+                    <div class="section-security">
+                        <div class="item pass">
+                            <div class="content">
+                                <span>Password</span>
+                                <span>Last Change On 25/10/2021</span>
+                            </div>
+                            <a href="#change" class="change btn">Change</a>
+                        </div>
+                        <div class="item auth">
+                            <div class="content">
+                                <span>Two-Factor Authentication</span>
+                                <span>Enable/Disabled The Feature</span>
+                            </div>
+                            <label for="checkAuth">
+                                <input type="checkbox" name="authCheck" id="checkAuth" placeholder=""
+                                    title="This is check" checked />
+                                <div class="checkbox"></div>
+                            </label>
+                        </div>
+                        <div class="item devices">
+                            <div class="content">
+                                <span>Devices</span>
+                                <span>Check The Login Devices List</span>
+                            </div>
+                            <a href="#Devices" class="devices btn">Devices</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card social-info">
+                    <div class="head-info">
+                        <span class="title-card">Social Info</span>
+                        <span class="title-disc">Social Media information</span>
+                    </div>
+                    <form class="section-info-social">
+                        <label for="txtTwit">
+                            <i class="fab fa-twitter"></i>
+                            <input type="text" name="txtTwit" id="txtTwit" placeholder="Twitter Username"
+                                title="This Is For user Name facebook" />
+                        </label>
+                        <label for="txtFace">
+                            <i class="fab fa-facebook-f"></i>
+                            <input type="text" name="txtName" id="txtFace" placeholder="Facebook Username"
+                                title="This Is For user Name facebook" /> </label><label for="txtLinkedin">
+                            <i class="fab fa-linkedin"></i>
+                            <input type="text" name="txtLinkedin" id="txtLinkedin" placeholder="Linkedin Username"
+                                title="This Is For user Name linkedin" /> </label><label for="txtTube">
+                            <i class="fab fa-youtube"></i>
+                            <input type="text" name="txtTube" id="txtTube" placeholder="Youtube Username"
+                                title="This Is For user Name youtube" />
+                        </label>
+                    </form>
+                </div>
+                <div class="card control-widgets">
+                    <div class="head-widgets">
+                        <span class="title-card">Widgets Control</span>
+                        <span class="title-disc">Show/Hide Widgets</span>
+                    </div>
+                    <form class="section">
+                        <label for="Quick">
+                            <input type="checkbox" name="quirk" id="Quick" checked />
+                            <div class="check-switch"></div>
+                            Quick Draft
+                        </label>
+                        <label for="Target">
+                            <input type="checkbox" name="Target" id="Target" checked />
+                            <div class="check-switch"></div>
+                            Yearly Targets
+                        </label>
+                        <label for="statistic">
+                            <input type="checkbox" name="statistic" id="statistic" checked />
+                            <div class="check-switch"></div>
+                            Tickets Statistic
+                        </label>
+                        <label for="News">
+                            <input type="checkbox" name="News" id="News" />
+                            <div class="check-switch"></div>
+                            Latest News
+                        </label>
+                        <label for="tasks">
+                            <input type="checkbox" name="tasks" id="tasks" />
+                            <div class="check-switch"></div>
+                            Latest Tasks
+                        </label>
+                        <label for="search">
+                            <input type="checkbox" name="search" id="search" checked />
+                            <div class="check-switch"></div>
+                            Top Search Items
+                        </label>
+                    </form>
+                </div>
+                <div class="card manager-backup">
+                    <div class="head-manager">
+                        <span class="title-card">Backup Manager</span>
+                        <span class="title-disc">Control Backup Time And Location</span>
+                    </div>
+                    <form class="section-manager">
+                        <div class="gr-time">
+                            <label for="rdDaily">
+                                <input type="radio" name="manager" id="rdDaily" checked />
+                                <div class="switch-rd"></div>
+                                Daily
+                            </label>
+                            <label for="rdWeekly">
+                                <input type="radio" name="manager" id="rdWeekly" />
+                                <div class="switch-rd"></div>
+                                Weekly
+                            </label>
+                            <label for="rdMonthly">
+                                <input type="radio" name="manager" id="rdMonthly" />
+                                <div class="switch-rd"></div>
+                                Monthly
+                            </label>
+                        </div>
+                        <div class="gr-loc">
+                            <label for="rdMega">
+                                <input type="radio" name="locBack" id="rdMega" checked />
+                                <div class="rd-check"></div>
+                                <i class="fa fa-server"></i>
+                                <span>Megaman</span>
+                            </label>
+                            <label for="rdZero">
+                                <input type="radio" name="locBack" id="rdZero" />
+                                <div class="rd-check"></div>
+                                <i class="fa fa-server"></i>
+                                <span>Zero</span>
+                            </label>
+                            <label for="rdSigma">
+                                <input type="radio" name="locBack" id="rdSigma" />
+                                <div class="rd-check"></div>
+                                <i class="fa fa-server"></i>
+                                <span>Sigma</span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
